@@ -74,8 +74,6 @@ fs.readFile('./story.txt', 'utf8', async (err, text) => {
         i = 0;
         const parahraphSize = 600
         while ((i+1)*parahraphSize<=text.length){
-            
-            console.log(i)
             paragraph = text.substring(i*parahraphSize,(i+1)*parahraphSize) 
             
 
@@ -86,27 +84,9 @@ fs.readFile('./story.txt', 'utf8', async (err, text) => {
             }
             }) 
 
-            // ADD IMAGE
-            // Read the image file as binary data to add into file
-            // timing = i * 60000
-            // setTimeout(() => {
-            //     createParagraphImage(i,paragraph)
-            //     console.log("Delayed for 1 min.");
-            //   }, `${timing}`);
             createParagraphImage(i,paragraph)
             i+=1
         }
-
-        // lastParagraph = text.substring(i,text.length) 
-        // fs.appendFile('./ebook.txt', lastParagraph, err => {
-        //     if (err) {
-        //     console.error(err);
-        //     }
-        // })
-
-        console.log(text.length)
-        // createParagraphImage(text)
-
       }
 
 })
