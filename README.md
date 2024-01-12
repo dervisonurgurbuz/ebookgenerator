@@ -2,7 +2,7 @@
 
 ## How to run
 
-### Initially the packages and depenedencies needs to be installed 
+### Initially the packages and dependencies needs to be installed 
 
 ```
 npm install
@@ -16,7 +16,7 @@ npm run start
 
 ### After the images are saved locally by the algorithm the user can open the html file to see unique ebook created. The ebook.js file has been written to consecutively fill the html with the files in parahraphs and images that previously created.
 
-#### open /frontend/ebook.html in default browser
+#### Open /frontend/ebook.html in default browser.
 
 ### Which can be further printed in pdf version which is like the one we added in our submission.
 
