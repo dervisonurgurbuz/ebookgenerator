@@ -71,8 +71,8 @@ fs.readFile('./story.txt', 'utf8', async (err, text) => {
         console.error(err);
         return;
       } else {
-        i = 1;
-        const parahraphSize = 500
+        i = 0;
+        const parahraphSize = 600
         while ((i+1)*parahraphSize<=text.length){
             
             console.log(i)
@@ -80,7 +80,7 @@ fs.readFile('./story.txt', 'utf8', async (err, text) => {
             
 
             // ADD PARAGRAPH
-            fs.appendFile(`./paragraphs/paragraph${i}.txt`, paragraph, err => {
+            fs.writeFile(`./paragraphs/paragraph${i}.txt`, paragraph, err => {
                 if (err) {
                 console.error(err);
             }
